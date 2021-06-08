@@ -1,7 +1,7 @@
 .header {
 
     nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
     }
     &__logo {
 
@@ -26,6 +26,7 @@
     }
 
     &__links {
+        border: 1px solid red;
 
         a {
             font-size: $font-sm;
