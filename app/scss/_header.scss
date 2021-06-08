@@ -30,6 +30,7 @@
         a {
             font-size: $font-sm;
             color: $greyishBlue;
+            transition: color 200ms ease-in-out;
             
             
             &:not(:last-child){
