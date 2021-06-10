@@ -2,7 +2,7 @@
     
     //hamburger menu
     &.open{
-        .header__menu{
+        .header__toggle{
             >span:first-child{
                 transform: rotate(45deg);
             }
@@ -28,9 +28,11 @@
         background-image: linear-gradient($darkBlue, transparent);
     }
 
-    nav {
-        padding: 1.0625rem 1.5rem;
+    nav{
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
+
     &__logo {
 
         img{
@@ -39,7 +41,7 @@
         }
     }
 
-    &__menu {
+    &__toggle { // mobile menu toggle
 
         > span {
             display: block;
@@ -52,6 +54,18 @@
             &:not(:last-child){
                 margin-bottom: 5px;
             }
+        }
+    }
+
+    &__menu{
+        background: $white;
+        padding: 1.625rem;
+        
+        a{
+            color: $darkBlue;
+            padding: 01.625rem;
+            display: block;
+            text-align: center;
         }
     }
 
