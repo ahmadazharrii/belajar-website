@@ -1,7 +1,10 @@
+.has-fade {
+    visibility: hidden;
+}
+
 @keyframes fade-in {
     from{
         visibility: hidden;
-        display: none;
         opacity: 0;
     }
     1%{
@@ -9,17 +12,16 @@
         opacity: 0;
     }
     to{
-        display: block;
+        visibility: visible;
         opacity: 1;
     }
 }
 .fade-in{
-    animation: fade-in 300ms ease-in-out forwards;
+    animation: fade-in 200ms ease-in-out forwards;
 }
 @keyframes fade-out {
     from{
         visibility: visible;
-        display: none;
         opacity: 1;
     }
     99%{
@@ -28,10 +30,9 @@
     }
     to{
         visibility: hidden;
-        display: block;
         opacity: 0;
     }
 }
 .fade-out{
-    animation: fade-out 300ms ease-in-out forwards;
+    animation: fade-out 200ms ease-in-out forwards;
 }
